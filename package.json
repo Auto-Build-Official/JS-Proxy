@@ -1,0 +1,39 @@
+{
+  "name": "JS-Proxy",
+  "version": "1.0.0",
+  "description": "to do",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Yah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "unblocker": "^2.3.0",
+    "ytdl-core": "^4.9.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**": [
+      "prettier --config .prettierrc --write",
+
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1"
+  }
+}
