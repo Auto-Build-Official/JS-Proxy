@@ -4,7 +4,7 @@
   "description": "to do",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "nodejs"
@@ -13,5 +13,24 @@
   "license": "MIT",
   "dependencies": {
     "unblocker": "^2.3.0"
+  },
+"husky":{
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
+},
+"lint-staged": {
+    "./**": [
+        "prettier --config .prettierrc --write",
+        "eslint --fix",
+        "git add"
+    ]
+},
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1"
   }
 }
