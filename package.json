@@ -1,0 +1,17 @@
+{
+  "name": "JS-Proxy",
+  "version": "1.0.0",
+  "description": "to do",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Yah",
+  "license": "MIT",
+  "dependencies": {
+    "unblocker": "^2.3.0"
+  }
+}
